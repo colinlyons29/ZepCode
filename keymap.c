@@ -193,7 +193,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         eeconfig_init();
         return false;
       case VRSN:
-        SEND_STRING (QMK_KEYBOARD "/" QMK_KEYMAP " @ " QMK_VERSION);
+        SEND_STRING (QMK_KEYBOARD "/" QMK_KEYMAP " Version 1.23 @ " QMK_VERSION);
         return false;
         case HSV_172_255_255:
           if (record->event.pressed) {
