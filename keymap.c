@@ -1,6 +1,13 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
 
+// Copyright (C) 2019  Colin Lyons
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// any later version.
+
 enum custom_keycodes {
 #ifdef ORYX_CONFIGURATOR
   EPRM = EZ_SAFE_RANGE,
