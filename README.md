@@ -1,3 +1,4 @@
+```
 # ZepCode
 My own firmware for Ergodox EZ keyboard. Download is available through the Firmware.hex.
 See layout below:
@@ -89,3 +90,4 @@ See layout below:
                                   |      |      |      |       |      |      |      |
                                   `--------------------'       `--------------------'
                                   
+```
