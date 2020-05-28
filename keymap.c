@@ -68,9 +68,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 1: Symbol Layer
  *
  * ,---------------------------------------------------.           ,--------------------------------------------------.
- * |  Esc    |  F1  |  F2  |  F3  |  F4  |  F5  |      |           |      |  F6  |  F7  |  F8  |  F9  |  F10 |        |
+ * |  Esc    |  F1  |  F2  |  F3  |  F4  |  F5  |  F11 |           |  F12 |  F6  |  F7  |  F8  |  F9  |  F10 |        |
  * |---------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
- * |  LAlt   |   !  |   @  |   {  |   }  |   |  |  G   |           |      |   Up |   7  |   8  |   9  |   *  |   F12  |
+ * |  LAlt   |   !  |   @  |   {  |   }  |   |  |  G   |           |      |   Up |   7  |   8  |   9  |   *  |        |
  * |---------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |  LCtrl  |   #  |   $  |   (  |   )  |   `  |------|           |------| Down |   4  |   5  |   6  |   +  |   TG2  |
  * |---------+------+------+------+------+------| Bksp |           |      |------+------+------+------+------+--------|
@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [1] = LAYOUT_ergodox(
   // left hand
-  KC_ESCAPE,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_TRNS,
+  KC_ESCAPE,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F11,
   KC_LALT,      KC_EXLM,  KC_AT,    KC_LCBR,  KC_RCBR,  KC_PIPE,  KC_G,
   KC_LCTRL,     KC_HASH,  KC_DLR,   KC_LPRN,  KC_RPRN,KC_GRAVE,
   KC_LSHIFT,    KC_PERC,  KC_CIRC,  KC_LBRACKET,KC_RBRACKET,KC_TILD,KC_BSPACE,
@@ -98,8 +98,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                           RGB_VAI,RGB_VAD,  HSV_0_255_255,
 
   // right hand
-  KC_TRNS,   KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_TRNS,
-  KC_TRNS,   KC_UP,    KC_7,     KC_8,     KC_9,     KC_KP_ASTERISK,KC_F12,
+  KC_F12,   KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_TRNS,
+  KC_TRNS,   KC_UP,    KC_7,     KC_8,     KC_9,     KC_KP_ASTERISK,KC_TRNS,
   KC_DOWN,   KC_4,     KC_5,     KC_6,     KC_PLUS,  TG(2),
   KC_TRNS,   KC_AMPR,  KC_1,     KC_2,     KC_3,     KC_BSLASH,KC_DELETE,
   KC_TRNS,   KC_0,     TG(2),    KC_EQUAL, KC_TRNS,
